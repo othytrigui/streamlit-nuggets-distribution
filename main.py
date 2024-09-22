@@ -2,6 +2,13 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
+# Set the page title and icon
+st.set_page_config(
+    page_title="Blood recycling nuggets distribution",  # Title of the browser tab
+    page_icon="favicon.png",  # You can use an emoji or a path to a local image file for the icon
+    layout="centered"  # Optional: layout can be "centered" or "wide"
+)
+
 # Function to calculate the total nuggets for a person
 def calculate_total_nuggets(nuggets_list):
     total_nuggets = 0
